@@ -1,0 +1,581 @@
+/*===================================================== roots*/
+:root {
+  --primary: rgba(29, 191, 115, 1);
+  --primary-50: rgba(29, 191, 115, 0.5);
+  --primary-shadow: rgba(233, 249, 241, 1);
+  --secondary: rgba(255, 203, 49, 1);
+  --secondary-50: rgba(255, 203, 49, 0.5);
+
+  --white: rgba(253, 253, 253, 1);
+  --white-50: rgba(253, 253, 253, 0.5);
+  --light: rgba(195, 197, 200, 1);
+  --light-50: rgba(195, 197, 200, 0.5);
+  --black: rgba(0, 0, 0, 1);
+  --black-50: rgba(0, 0, 0, 0.5);
+  --dark: rgba(85, 85, 85, 1);
+  --dark-50: rgba(85, 85, 85, 0.5);
+  --dark-75: rgba(85, 85, 85, 0.75);
+
+  --orange: rgba(245, 99, 66, 1);
+  --orange-50: rgba(245, 99, 66, 0.5);
+  --error: rgba(220, 53, 69, 1);
+  --error-50: rgba(220, 53, 69, 0.5);
+
+  --font-family: "Montserrat", sans-serif;
+
+  --font-size: 14px;
+}
+
+@media only screen and (max-width: 572px) {
+  :root {
+    --font-size: 12px;
+  }
+}
+
+/*===================================================== globe*/
+* {
+  text-align: start;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+*:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0 transparent !important;
+}
+
+/*===================================================== html*/
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  font-size: 1rem;
+  font-family: var(--font-family);
+  color: var(--secondary);
+}
+
+/*========================================<Fonts variable*/
+
+.cfs-1 {
+  font-size: 16px;
+}
+
+.cfs-2 {
+  font-size: 18px;
+}
+
+.cfs-3 {
+  font-size: 24px;
+}
+
+.cfs-4 {
+  font-size: 30px;
+}
+
+/*===================================================== heading elements*/
+
+h1 {
+  font-size: calc(1rem * 3.5);
+}
+
+h2 {
+  font-size: calc(1rem * 3);
+}
+
+h3 {
+  font-size: calc(1rem * 2.5);
+}
+
+h4 {
+  font-size: calc(1rem * 2);
+}
+
+h5 {
+  font-size: calc(1rem * 1.5);
+}
+
+h6 {
+  font-size: calc(1rem * 1);
+}
+/*========================================<colors variables*/
+.primary-c {
+  color: var(--primary) !important;
+}
+
+.primary-50-c {
+  color: var(--primary-50) !important;
+}
+
+.secondary-c {
+  color: var(--secondary) !important;
+}
+
+.secondary-50-c {
+  color: var(--secondary-50) !important;
+}
+
+.black-c {
+  color: var(--black) !important;
+}
+
+.white-c {
+  color: var(--white) !important;
+}
+
+.white-50-c {
+  color: var(--white-50) !important;
+}
+
+.light-c {
+  color: var(--light) !important;
+}
+
+.light-50-c {
+  color: var(--light-50) !important;
+}
+
+.dark-c {
+  color: var(--dark) !important;
+}
+
+.dark-50-c {
+  color: var(--dark-50) !important;
+}
+
+.dark-75-c {
+  color: var(--dark-75) !important;
+}
+
+.orange-c {
+  color: var(--orange) !important;
+}
+
+.orange-50-c {
+  color: var(--orange-50) !important;
+}
+
+.error-c {
+  color: var(--error) !important;
+}
+
+.error-50-c {
+  color: var(--error-50) !important;
+}
+
+.transparent-c {
+  color: transparent !important;
+}
+/*========================================<background colors variables*/
+.primary-bg {
+  background-color: var(--primary) !important;
+}
+
+.primary-50-bg {
+  background-color: var(--primary-50) !important;
+}
+
+.secondary-bg {
+  background-color: var(--secondary) !important;
+}
+
+.secondary-50-bg {
+  background-color: var(--secondary-50) !important;
+}
+
+.black-bg {
+  background-color: var(--black) !important;
+}
+
+.white-bg {
+  background-color: var(--white) !important;
+}
+
+.white-50-bg {
+  background-color: var(--white-50) !important;
+}
+
+.light-bg {
+  background-color: var(--light) !important;
+}
+
+.light-50-bg {
+  background-color: var(--light-50) !important;
+}
+
+.orange-bg {
+  background-color: var(--orange) !important;
+}
+
+.orange-50-bg {
+  background-color: var(--orange-50) !important;
+}
+
+.error-bg {
+  background-color: var(--error) !important;
+}
+
+.error-50-bg {
+  background-color: var(--error-50) !important;
+}
+
+.transparent-bg {
+  background-color: transparent !important;
+}
+/*========================================<border colors variables*/
+.primary-brdr {
+  border-color: var(--primary) !important;
+}
+
+.primary-50-brdr {
+  border-color: var(--primary-50) !important;
+}
+
+.secondary-brdr {
+  border-color: var(--secondary) !important;
+}
+
+.secondary-50-brdr {
+  border-color: var(--secondary-50) !important;
+}
+
+.black-brdr {
+  border-color: var(--black) !important;
+}
+
+.black-50-brdr {
+  border-color: var(--black-50) !important;
+}
+
+.white-brdr {
+  border-color: var(--white) !important;
+}
+
+.white-50-brdr {
+  border-color: var(--white-50) !important;
+}
+
+.light-brdr {
+  border-color: var(--light) !important;
+}
+
+.light-50-brdr {
+  border-color: var(--light-50) !important;
+}
+
+.orange-brdr {
+  border-color: var(--orange) !important;
+}
+
+.orange-50-brdr {
+  border-color: var(--orange-50) !important;
+}
+
+.error-brdr {
+  border-color: var(--error) !important;
+}
+
+.error-50-brdr {
+  border-color: var(--error-50) !important;
+}
+
+.transparent-brdr {
+  border-color: transparent !important;
+}
+
+/*========================================< hover effect varibales*/
+.hover-primary-c:hover {
+  color: var(--primary) !important;
+}
+
+.hover-primary-50-c:hover {
+  color: var(--primary-50) !important;
+}
+
+.hover-secondary-c:hover {
+  color: var(--secondary) !important;
+}
+
+.hover-secondary-50-c:hover {
+  color: var(--secondary-50) !important;
+}
+
+.hover-secondary-c:hover {
+  color: var(--secondary) !important;
+}
+
+.hover-secondary-50-c:hover {
+  color: var(--secondary-50) !important;
+}
+
+.hover-black-c:hover {
+  color: var(--black) !important;
+}
+
+.hover-black-50-c:hover {
+  color: var(--black-50) !important;
+}
+
+.hover-white-c:hover {
+  color: var(--white) !important;
+}
+
+.hover-white-50-c:hover {
+  color: var(--white-50) !important;
+}
+
+.hover-light-c:hover {
+  color: var(--light) !important;
+}
+
+.hover-light-50-c:hover {
+  color: var(--light-50) !important;
+}
+
+.hover-orange-c:hover {
+  color: var(--orange) !important;
+}
+
+.hover-orange-50-c:hover {
+  color: var(--orange-50) !important;
+}
+
+.hover-error-c:hover {
+  color: var(--error) !important;
+}
+
+.hover-error-50-c:hover {
+  color: var(--error-50) !important;
+}
+
+.hover-transparent-c:hover {
+  color: transparent !important;
+}
+/*=====================================================navbar section*/
+nav.navbar * {
+  text-transform: capitalize;
+}
+
+li.nav-item {
+  margin: 0 2.5px !important;
+}
+
+a.nav-link {
+  padding: 10px 10px !important;
+  text-align: center !important;
+  display: block !important;
+  align-items: center!important;
+}
+
+.icon-nav {
+  text-align: center !important;
+  display: block !important;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+nav.navbar .navbar-brand img {
+  padding: 5px 0;
+  height: 65px;
+}
+
+.dropdown-menu {
+  min-width: 0 !important;
+  max-height: 0 !important;
+  display: block;
+  overflow: hidden;
+  -webkit-transition: all 400ms ease-in-out !important;
+  -moz-transition: all 400ms ease-in-out !important;
+  -ms-transition: all 400ms ease-in-out !important;
+  -o-transition: all 400ms ease-in-out !important;
+  transition: all 400ms ease-in-out !important;
+}
+
+.dropdown-menu.show {
+  max-height: 400px !important;
+}
+
+.clickable {
+  cursor: pointer !important;
+}
+
+/*========================================< slider input*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*========================================<images classes*/
+img.cover {
+  object-fit: cover;
+  object-position: top;
+}
+
+img.cover2 {
+  object-fit: cover;
+  object-position: center;
+}
+
+img.contain {
+  object-fit: contain;
+  object-position: center;
+}
+
+/*========================================< list style */
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*========================================< Contact Address And Footer Style */
+.contact-adress {
+  margin: 68px 0 0px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-adress .contact-office-address {
+  margin-bottom: 18px;
+  float: right;
+}
+.contact-adress .contact-online-address {
+  color: rgb(117, 117, 117);
+}
+
+html[dir="rtl"] .contact-online-container {
+  padding-right: 50px !important;
+}
+.contact-online-container .contact-online-address {
+  padding-inline-start: 10px !important;
+}
+
+.single-online-address {
+  position: relative;
+  margin-bottom: 30px;
+  text-align: start;
+}
+.single-online-address i {
+  padding-right: 7px;
+  color: rgb(117, 117, 117);
+}
+.single-online-address a {
+  padding-right: 7px;
+  color: rgb(117, 117, 117);
+}
+.single-online-address span {
+  position: absolute;
+  left: 25px;
+  top: 0;
+  width: 100%;
+}
+
+.contact-icon {
+  margin-top: 19px;
+}
+.contact-icon ul li {
+  float: right;
+}
+.contact-icon ul li a {
+  margin: 0 13px 0 13px;
+  padding: 0px 12px 0px 0px;
+}
+
+/*========================================< Responsive Contact Address And Footer Style */
+@media screen and (max-width: 320px) {
+  .contact-office-address {
+    font-size: 18px;
+    max-width: 225px;
+    line-height: 1.5;
+  }
+}
+/*========================================< image section with text position */
+.img-section {
+  position: relative;
+  overflow: hidden;
+}
+.img-section .section-img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.img-section .section-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.img-section .section-text {
+  display: block;
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+
+.animate {
+  -webkit-transition: all 200ms linear !important;
+  -moz-transition: all 250ms linear !important;
+  -ms-transition: all 250ms linear !important;
+  -o-transition: all 250ms linear !important;
+  transition: all 250ms linear !important;
+}
