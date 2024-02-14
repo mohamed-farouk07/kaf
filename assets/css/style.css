@@ -609,6 +609,11 @@ html[dir="rtl"] .contact-online-container {
   border-radius: 50%;
 }
 
+/*========================================< avatar navbar*/
+.section-avatar {
+  border-radius: 50%;
+}
+
 /*===================================================== scroll*/
 .scroll-helper {
   position: sticky;
@@ -763,4 +768,131 @@ html[dir="rtl"] .contact-online-container {
 .counter__btn--plus.disabled {
   border: 1px solid #c4c4c4;
   cursor: not-allowed;
+}
+
+/*===================================================== service rating section */
+.service-rating {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/*===================================================== progress bar*/
+#full-stars-example .rating-group {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+}
+#full-stars-example .rating__icon {
+  pointer-events: none;
+}
+#full-stars-example .rating__input {
+  position: absolute !important;
+  left: -9999px !important;
+}
+#full-stars-example .rating__label {
+  cursor: pointer;
+  padding: 0 0.1em;
+  font-size: 1.5rem;
+}
+#full-stars-example .rating__icon--star {
+  color: var(--secondary);
+}
+#full-stars-example .rating__icon--none {
+  color: var(--light);
+}
+#full-stars-example
+  .rating__input:checked
+  ~ .rating__label
+  .rating__icon--star {
+  color: var(--light);
+}
+#full-stars-example .rating-group:hover .rating__label .rating__icon--star {
+  color: var(--secondary);
+}
+#full-stars-example .rating__input:hover ~ .rating__label .rating__icon--star {
+  color: var(--light);
+}
+#full-stars-example
+  .rating-group:hover
+  .rating__input--none:not(:hover)
+  + .rating__label
+  .rating__icon--none {
+  color: var(--light);
+}
+
+/*===================================================== form avatar*/
+.form-avatar {
+  vertical-align: middle;
+}
+
+
+/*===================================================== heart button for cards*/
+#like-button-1:hover {
+  cursor: pointer;
+  color: #cd0928;
+}
+
+#like-button-1.not-liked {
+  color: var(--light);
+}
+
+#like-button-1.not-liked:hover {
+  color: var(--error);
+}
+
+#like-button-1.liked {
+  color: var(--error);
+}
+
+#like-button-1.liked-shaked {
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0) rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@-webkit-keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(0, 0px, 0) rotate(0deg);
+  }
+  20%,
+  80% {
+    transform: translate3d(0, -2px, 0) rotate(5deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(0, 0px, 0) rotate(0deg);
+  }
+  40%,
+  60% {
+    transform: translate3d(0, -2px, 0) rotate(-5deg);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(0, 0px, 0) rotate(0deg);
+  }
+  20%,
+  80% {
+    transform: translate3d(0, -2px, 0) rotate(5deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(0, 0px, 0) rotate(0deg);
+  }
+  40%,
+  60% {
+    transform: translate3d(0, -2px, 0) rotate(-5deg);
+  }
 }

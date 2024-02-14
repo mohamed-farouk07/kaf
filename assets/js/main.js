@@ -1,3 +1,4 @@
+//this function when click on item menu don't close menu
 function toggleElementClass(target, elClass, htmlClass) {
   target = document.querySelector(target);
   if (target) {
@@ -35,6 +36,7 @@ window.onload = () => {
   });
 };
 
+//this function for make heart icon red and remove color when click on it 
 
 var like_button = document.getElementById("like-button");
 if (like_button) {
@@ -58,6 +60,29 @@ function toggleButton(button) {
 }
 
 
+//this function for make heart icon red and remove color when click on it 
+var like_button = document.getElementById("like-button-1");
+if (like_button) {
+    like_button.addEventListener("click", doLikeButton);
+}
+
+function doLikeButton(e) {
+    toggleButton(e.target);
+}
+
+function toggleButton(button) {
+    button.classList.remove('liked-shaked');
+    button.classList.toggle('liked');
+    button.classList.toggle('not-liked');
+    button.classList.toggle('fa-heart');
+    button.classList.toggle('fa-heart');
+
+    if(button.classList.contains("liked")) {
+        button.classList.add('liked-shaked');
+    }
+}
+
+//this function for when click on plus or minus make numbers counter
 const counters = document.querySelectorAll('[data-counter]');
 if (counters) {
   counters.forEach((counter) => {
@@ -102,3 +127,35 @@ if (counters) {
     });
   });
 }
+
+//this function for loop on comments section
+document.addEventListener('DOMContentLoaded', function () {
+  const originalDiv = document.getElementById('myAvatars');
+
+  for (let i = 1; i <= 2; i++) {
+    // Clone the original div
+    const clonedDiv = originalDiv.cloneNode(true);
+
+    // Update the ID of the cloned div to make it unique
+    clonedDiv.id = `myAvatars${i}`;
+
+    // Append the cloned div to the container
+    originalDiv.parentNode.appendChild(clonedDiv);
+  }
+});
+
+//this function for loop on cards sections
+document.addEventListener('DOMContentLoaded', function () {
+  const originalDiv = document.getElementById('myProduct');
+
+  for (let i = 1; i <= 3; i++) {
+    // Clone the original div
+    const clonedDiv = originalDiv.cloneNode(true);
+
+    // Update the ID of the cloned div to make it unique
+    clonedDiv.id = `myProduct${i}`;
+
+    // Append the cloned div to the container
+    originalDiv.parentNode.appendChild(clonedDiv);
+  }
+});
