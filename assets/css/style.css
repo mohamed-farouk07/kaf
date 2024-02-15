@@ -553,6 +553,7 @@ html[dir="rtl"] .contact-online-container {
 .img-section {
   position: relative;
   overflow: hidden;
+  padding: 0;
 }
 .img-section .section-img {
   display: block;

@@ -159,3 +159,19 @@ document.addEventListener('DOMContentLoaded', function () {
     originalDiv.parentNode.appendChild(clonedDiv);
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const originalDiv = document.getElementById('myProduct2');
+
+  for (let i = 1; i <= 2; i++) {
+    // Clone the original div
+    const clonedDiv = originalDiv.cloneNode(true);
+
+    // Update the ID of the cloned div to make it unique
+    clonedDiv.id = `myProduct2${i}`;
+
+    // Append the cloned div to the container
+    originalDiv.parentNode.appendChild(clonedDiv);
+  }
+});
