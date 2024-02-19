@@ -358,10 +358,12 @@ h6 {
 /*=====================================================navbar section*/
 nav.navbar * {
   text-transform: capitalize;
+  
 }
 
 li.nav-item {
   margin: 0 2.5px !important;
+  width: 100%;
 }
 
 a.nav-link {
@@ -381,7 +383,7 @@ a.nav-link {
 }
 
 nav.navbar .navbar-brand img {
-  padding: 5px 0;
+  padding: 10px 0;
   height: 65px;
 }
 
@@ -741,16 +743,14 @@ li {
 .service-rating {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content:start;
 }
 
 /*===================================================== progress bar*/
 #full-stars-example .rating-group {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content:start;
 }
 #full-stars-example .rating__icon {
   pointer-events: none;
