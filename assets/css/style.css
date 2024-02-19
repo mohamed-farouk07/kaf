@@ -491,14 +491,6 @@ li {
   padding: 0;
 }
 
-/*========================================< Responsive Contact Address And Footer Style */
-@media screen and (max-width: 320px) {
-  .contact-office-address {
-    font-size: 18px;
-    max-width: 225px;
-    line-height: 1.5;
-  }
-}
 /*========================================< image section with text position */
 .img-section {
   position: relative;
